@@ -12,6 +12,7 @@ import Events from './pages/Events';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import UserProfile from './pages/UserProfile';
+import UploadArtwork from './pages/UploadArtwork';
 import Admin from './pages/Admin';
 import ChatPanel from './components/ChatPanel';
 import { useAuth } from './context/AuthContext';
@@ -49,6 +50,7 @@ function App() {
                                 <Route path="/login" element={<Login />} />
                                 <Route path="/register" element={<Register />} />
                                 <Route path="/profile" element={<UserProfile />} />
+                                <Route path="/upload" element={<UploadArtwork />} />
                                 <Route path="/admin" element={<Admin />} />
                             </Routes>
                         </main>

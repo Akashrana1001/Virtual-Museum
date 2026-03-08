@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { FiMenu, FiX, FiSearch, FiUser, FiLogOut, FiGrid, FiCalendar, FiBox, FiUsers } from 'react-icons/fi';
+import { FiMenu, FiX, FiSearch, FiUser, FiLogOut, FiGrid, FiCalendar, FiBox, FiUsers, FiUpload } from 'react-icons/fi';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -55,6 +55,11 @@ const Navbar = () => {
                     <div className="nav-auth">
                         {isAuthenticated ? (
                             <>
+                                {(isAdmin || user?.role === 'artist') && (
+                                    <Link to="/upload" className="btn btn-sm btn-primary" onClick={() => setMenuOpen(false)}>
+                                        <FiUpload size={14} /> Upload
+                                    </Link>
+                                )}
                                 {isAdmin && (
                                     <Link to="/admin" className="btn btn-sm btn-outline" onClick={() => setMenuOpen(false)}>
                                         Admin
