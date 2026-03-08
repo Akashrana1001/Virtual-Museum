@@ -22,7 +22,7 @@ const io = initSocket(server);
 
 // Middleware
 app.use(cors({
-    origin: true,
+    origin: ['http://localhost:5173', 'https://virtual-museum-dun.vercel.app'],
     credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));

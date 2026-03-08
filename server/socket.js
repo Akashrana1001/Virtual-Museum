@@ -3,7 +3,7 @@ const socketIO = require('socket.io');
 const initSocket = (server) => {
     const io = socketIO(server, {
         cors: {
-            origin: process.env.CLIENT_URL || 'http://localhost:5173',
+            origin: [process.env.CLIENT_URL || 'http://localhost:5173', 'https://virtual-museum-dun.vercel.app'],
             methods: ['GET', 'POST'],
         },
     });
