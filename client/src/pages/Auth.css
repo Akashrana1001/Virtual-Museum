@@ -1,0 +1,114 @@
+.auth-page {
+    min-height: calc(100vh - 72px);
+    min-height: calc(100dvh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 2.5rem;
+}
+
+@media (max-width: 480px) {
+    .auth-page {
+        align-items: flex-start;
+        padding: 1rem 0.75rem;
+    }
+
+    .auth-card {
+        padding: 1.5rem;
+        border-radius: var(--radius-md);
+    }
+
+    .auth-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .form-input {
+        padding: 10px 12px;
+        font-size: 16px;
+        /* prevents iOS zoom on focus */
+    }
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header .logo-icon {
+    font-size: 2rem;
+    color: var(--accent-gold);
+}
+
+.auth-header h1 {
+    font-size: 1.8rem;
+    margin: 0.75rem 0 0.25rem;
+}
+
+.auth-header p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.auth-error {
+    background: rgba(244, 63, 94, 0.1);
+    border: 1px solid var(--accent-rose);
+    color: var(--accent-rose);
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.auth-footer a {
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.role-toggle {
+    display: flex;
+    gap: 8px;
+    background: var(--bg-tertiary);
+    padding: 4px;
+    border-radius: var(--radius-sm);
+}
+
+.role-btn {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.role-btn.active {
+    background: var(--accent-blue);
+    color: white;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}

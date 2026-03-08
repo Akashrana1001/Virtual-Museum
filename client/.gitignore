@@ -1,0 +1,14 @@
+
+node_modules/
+dist/
+coverage/
+.env
+
+
+And for server:
+
+
+node_modules/
+dist/
+coverage/
+.env

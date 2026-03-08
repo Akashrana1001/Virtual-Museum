@@ -1,0 +1,29 @@
+{
+    "name": "virtual-museum-client",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@react-three/drei": "^9.92.7",
+        "@react-three/fiber": "^8.15.12",
+        "@react-three/postprocessing": "^2.15.11",
+        "axios": "^1.6.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.12.0",
+        "react-router-dom": "^6.21.1",
+        "socket.io-client": "^4.7.2",
+        "three": "^0.160.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.43",
+        "@vitejs/plugin-basic-ssl": "^1.1.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "vite": "^5.0.8"
+    }
+}

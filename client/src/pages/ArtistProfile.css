@@ -1,0 +1,95 @@
+.artist-profile-header {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.artist-profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-gold);
+    flex-shrink: 0;
+}
+
+.artist-profile-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.artist-profile-bio {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.artist-profile-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.artist-profile-stats strong {
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.artist-profile-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.artist-profile-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.artist-profile-links a:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.artist-artworks {
+    margin-top: 2rem;
+}
+
+.artist-artworks h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .artist-profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .artist-profile-stats {
+        justify-content: center;
+    }
+
+    .artist-profile-links {
+        justify-content: center;
+    }
+
+    .artist-profile-bio {
+        margin: 0 auto 1rem;
+    }
+}

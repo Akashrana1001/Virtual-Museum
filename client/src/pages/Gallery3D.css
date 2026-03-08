@@ -1,0 +1,126 @@
+.gallery3d-page {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background: #060a13;
+    touch-action: none;
+}
+
+.gallery3d-page canvas {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    inset: 0 !important;
+}
+
+.gallery3d-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: linear-gradient(to bottom, rgba(6, 10, 19, 0.9) 0%, transparent 100%);
+}
+
+.gallery3d-back {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.gallery3d-controls {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.gallery3d-controls span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.gallery3d-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Modal */
+.gallery3d-modal {
+    display: flex;
+    max-width: 800px;
+    width: 90%;
+    max-height: 85vh;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    animation: slideUp 0.3s ease;
+}
+
+.modal-art-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.modal-art-info {
+    padding: 2rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.modal-art-info h2 {
+    font-size: 1.5rem;
+    margin: 0.75rem 0 0.5rem;
+}
+
+.modal-artist {
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.modal-desc {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.modal-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .gallery3d-modal {
+        flex-direction: column;
+    }
+
+    .modal-art-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .gallery3d-controls {
+        display: none;
+    }
+}

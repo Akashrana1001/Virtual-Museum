@@ -1,0 +1,40 @@
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Server
+/server/node_modules/
+server/dist/
+server/coverage/
+server/.env
+
+# Client
+/client/node_modules/
+client/dist/
+client/coverage/
+client/.env
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.nproj
+*.sln
+*.swp
+
+# Build files
+/build/

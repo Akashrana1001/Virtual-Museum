@@ -1,0 +1,242 @@
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    transition: color var(--transition);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--accent-gold);
+}
+
+.artwork-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.artwork-main-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.artwork-main-image img {
+    width: 100%;
+    display: block;
+}
+
+.artwork-image-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.artwork-info-section {
+    padding-top: 1rem;
+}
+
+.artwork-title {
+    font-size: 2.2rem;
+    margin: 0.75rem 0 1.25rem;
+}
+
+.artwork-artist-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.artwork-artist-link:hover {
+    border-color: var(--accent-gold);
+    background: var(--accent-gold-soft);
+}
+
+.artist-avatar-md {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artist-name {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.artist-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.artwork-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta-item {
+    padding: 10px 14px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+}
+
+.meta-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+}
+
+.meta-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.artwork-description h3,
+.rating-section h3,
+.comments-section h3 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.artwork-description p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.artwork-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    padding: 4px 12px;
+    background: var(--accent-blue-soft);
+    color: var(--accent-blue);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.rating-section {
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+}
+
+.auth-prompt {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.auth-prompt a {
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+/* Comments */
+.comments-section {
+    max-width: 800px;
+}
+
+.comment-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.comment-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+.comment-body {
+    flex: 1;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.comment-author {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.comment-date {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.comment-text {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.comment-delete {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+}
+
+.no-comments {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .artwork-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .artwork-title {
+        font-size: 1.6rem;
+    }
+}
